@@ -1,0 +1,4 @@
+﻿Se quiere conectar unos auriculares (con conector aux – mini plug) a una placa de audio, que posee una entrada Plug.
+Considerar que la placa de audio, al tener una entrada plug, da salida a una frecuenca de 2 MHz,
+mientras que el auricular con la ficha miniplug, es capaz de recibir frecuencias de 1 MHz.
+Implementar la solución considerando el patrón que crea más conveniente.
