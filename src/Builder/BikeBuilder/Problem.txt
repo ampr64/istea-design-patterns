@@ -1,0 +1,6 @@
+﻿Implementar un constructor de bicicletas, teniendo en cuenta que puede haber 2 tipos: playeras y mountain bike. Tener en cuenta también a su vez, que las bicis están compuestas por cuadro, ruedas y manubrio.
+Tener en cuenta que, a su vez, hay dos tipos de cada uno de estos últimos (playeros y mountain bike).
+Además:
+-Todos los manubrios tienen el método Información(), que nos devolverá el tipo de manubrio.
+-Todas las ruedas tienen el método ObtenerTipoDeRueda(), que nos devolverá el tipo de ruedas.
+-Todos los cuadros tienen el método ObtenerTipoDeCuadro(), que nos devolverá el tipo de cuadro.

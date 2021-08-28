@@ -1,4 +1,4 @@
-﻿using BikeBuilder.ExtensionMethods;
+﻿using Utils.Extensions;
 
 namespace BikeBuilder.Abstract
 {

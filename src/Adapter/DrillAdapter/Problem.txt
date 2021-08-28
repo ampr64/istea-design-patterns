@@ -1,0 +1,4 @@
+﻿Sabiendo que un taladro utiliza un enchufe de tipo inglés (110v) y que únicamente posee el método Encender() que imprime en pantalla el voltaje al cual está funcionando.
+El taladro recibe en su inicialización dicho enchufe. Se debe realizar al adaptación para que funcione con la ficha europea (220v).
+Cada uno de estos enchufes posee un único método: Flujo110v y Flujo220v (que respectivamente devuelven dichos voltajes).
+Considerar que cada enchufe implementa su respectiva interfaz IEnchufeIngles e IEnchufeEuropeo.
