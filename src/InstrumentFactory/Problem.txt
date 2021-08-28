@@ -1,0 +1,11 @@
+﻿Implementar una fábrica de instrumentos musicales, teniendo en cuenta que puede haber dos tipos generales de instrumentos: de cuerda y de percusión.
+A su vez, los de cuerda se dividen en 2: Guitarra y Bajo, y los de Percusión, también en 2: Batería y SetDePercusion.
+Cada tipo de instrumento tiene su propia fábrica (es decir, una fábrica para instrumentos de cuerda y otra para instrumentos de percusión, teniendo en cuenta que TODOS son instrumentos).
+Consideraciones:
+-En su constructor, los instrumentos de percusión deben recibir el modelo y la cantidad de cuerpos(tambores) que lo componen.
+-En su constructor, los instrumentos de cuerdas deben recibir el modelo y la cantidad de cuerdas que lo componen.
+-Los instrumentos de cuerda, adicionalmente tienen todos una acción ImprimirCuerdas(), que imprime en pantalla la cantidad de cuerdas que poseen.
+-Los instrumentos percusivos, adicionalmente tienen todos una acción ImprimirCuerpos(), que imprime en pantalla la cantidad de cuerpos que lo componen.
+-TODOS los instrumentos tienen una acción Tocar(), que imprime en pantalla el tipo de instrumento y el modelo diciendo que está siendo tocado. Por ej:
+"La guitarra {_modelo} está siendo tocada".
+-Las dos fábricas comparten la acción FabricarInstrumento(), que recibe como parámetro el modelo del instrumento y el tipo a crear del mismo.
