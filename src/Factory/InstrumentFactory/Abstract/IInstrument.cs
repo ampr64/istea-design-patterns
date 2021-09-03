@@ -1,4 +1,6 @@
-﻿namespace InstrumentFactory.Abstract
+﻿using System;
+
+namespace InstrumentFactory.Abstract
 {
     public interface IInstrument
     {
