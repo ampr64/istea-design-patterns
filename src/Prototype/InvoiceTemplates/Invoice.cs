@@ -10,6 +10,7 @@ namespace InvoiceTemplates
 
         public decimal Amount { get; }
 
+        [JsonIgnore]
         public DateTime? DueDate { get; set; }
 
         public InvoiceType Type { get; }
