@@ -1,0 +1,6 @@
+﻿Generar un sistema que permita realizar la implementación de plantillas de facturas.
+Tener en cuenta que estas pueden ser de 3 tipos: A, B o C (No es necesario implementar una clase para cada una).
+Las facturas, se componen de receptor, monto, mes, y Tipo de Factura, y tienen un método imprimir que imprime en pantalla todos los datos anteriormente mencionados.
+Se debe tener en cuenta que al momento de guardar la plantilla de una factura, solo se guardarán el receptor, el monto y el tipo de factura, pero no el mes de emisión,
+por lo que deberá existir una manera de cambiarle el mes a la factura en cuestión.
+Si ya existe una plantilla con ese nombre, el sistema debe reemplazar la preexistente por el nuevo valor ingresado.
