@@ -1,0 +1,7 @@
+﻿Se quiere modelar un hospital donde ingresarán pacientes con 3 grados distintos de dolencias: leve, moderada y grave.
+Los profesionales para atender a dichos pacientes son Residentes, Medicos y Especialistas. Los residentes atienden a los leves, Medicos atienden a los moderados, y los especialistas a los graves.
+Tener en cuenta que los residentes tienen como superior al médico, y los médicos a los especialistas. Estos últimos no tienen ningún superior. 
+Al momento de instanciar un residente, se deberá verificar que no se esté ingresando como parámetro en el constructor otro residente, sino un médico o un especialista. 
+Al momento de instanciar un Médico, se deberá verificar que no se esté ingresando como parámetro en el constructor un residente u otro médico, sino un Especialista.
+En caso que el parámetro del constructor sea erróneo, el constructor deberá asignar el superior que corresponda. 
+Todos los médicos comparten la acción "Curar", que deberá verificar la dolencia del paciente y, acorde a su gravedad, sanarlo o derivarlo.

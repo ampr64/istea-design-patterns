@@ -6,9 +6,13 @@ namespace Hospital
     {
         public IHealthProfessional Superior { get; }
 
-        protected HealthProfessional() { }
+        public HealthProfessional() { }
 
-        protected HealthProfessional(IHealthProfessional superior) => Superior = superior;
+        protected HealthProfessional(IHealthProfessional superior)
+        {
+            if (GetType() == Superior?.GetType()) throw new ArgumentException("Superior cannot be of the same type as current professional.");
+            Superior = superior;
+        }
 
         protected abstract bool CanTreat(ConditionGravity gravity);
 
