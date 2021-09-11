@@ -4,9 +4,7 @@ namespace PizzaDelivery.Composite
 {
     public class Order : IOrder
     {
-        private readonly List<IDeliverable> _deliverables;
-        public IReadOnlyList<IDeliverable> Deliverables => _deliverables.AsReadOnly();
-
-
+        private readonly List<IDeliverable> _items = new();
+        public IReadOnlyList<IDeliverable> Items => _items.AsReadOnly();
     }
 }

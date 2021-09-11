@@ -5,8 +5,8 @@ namespace PizzaDelivery.Composite
 {
     public interface IOrder : IDeliverable
     {
-        IReadOnlyList<IDeliverable> Deliverables { get; }
+        IReadOnlyList<IDeliverable> Items { get; }
 
-        decimal Total => Deliverables.OfType<IProduct>().Sum(p => p.Price);
+        decimal Total => Items.OfType<IProduct>().Sum(p => p.Price);
     }
 }
