@@ -1,0 +1,9 @@
+﻿Se nos pide organizar un sistema para los pedidos de una pizzería. Sabemos que los pedidos
+pueden contener empanadas ($45), pizzas ($300) , gaseosas ($100) y a su vez otros pedidos dentro.
+Además sabemos que todos deben tener una función de mostrar Precio Final del mismo, mostrando el precio total del mismo, que sería la suma de todos los productos que lo componen.
+Adicionalmente se nos pide agregar funcionalidad para gestionar los pedidos, donde debemos contemplar dos situaciones de pedidos:
+-Retiro por sucursal
+-Retiro por delivery
+Se debe tener en cuenta también que los pedidos pueden ser despachados para delivery (con costo, el cual puede variar, es decir, no es estático)
+o retirados en local (sin costo alguno, pero indicando el nombre y apellido de la persona que retira).
+Realice la implementación correspondiente.
