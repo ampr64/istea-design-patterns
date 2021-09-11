@@ -24,13 +24,8 @@ namespace Hospital
                 return;
             }
 
-            if (Superior is null)
-            {
-                Console.WriteLine("This patient couldn't be treated.");
-                return;
-            }
-
-            Superior.Treat(patient);
+            Superior?.Treat(patient);
+            Console.WriteLine("This patient couldn't be treated.");
         }
     }
 }
