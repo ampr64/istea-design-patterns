@@ -1,7 +1,7 @@
 ﻿namespace PizzaDelivery.Composite.Products
 {
-    public class Pasty : IProduct
+    public class Pasty : Product
     {
-        public decimal Price => 45;
+        public override decimal Price => 45;
     }
 }

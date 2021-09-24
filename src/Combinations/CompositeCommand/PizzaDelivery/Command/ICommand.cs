@@ -2,8 +2,8 @@
 
 namespace PizzaDelivery.Command
 {
-    public interface IAsyncCommand
+    public interface ICommand
     {
-        Task ExecuteAsync();
+        Task Execute();
     }
 }

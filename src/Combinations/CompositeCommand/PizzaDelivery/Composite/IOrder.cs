@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 namespace PizzaDelivery.Composite
 {
@@ -7,6 +6,14 @@ namespace PizzaDelivery.Composite
     {
         IReadOnlyList<IDeliverable> Items { get; }
 
-        decimal Total => Items.OfType<IProduct>().Sum(p => p.Price);
+        IOrder WithItem(IDeliverable item);
+
+        bool IsDispatched { get; }
+
+        void DispatchTakeAway(string pickupBy);
+
+        void DispatchDelivery(decimal fee, string address);
+
+        decimal Total { get; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿namespace PizzaDelivery.Composite.Products
 {
-    public class Soda : IProduct
+    public class Soda : Product
     {
-        public decimal Price => 100;
+        public override decimal Price => 100;
     }
 }
