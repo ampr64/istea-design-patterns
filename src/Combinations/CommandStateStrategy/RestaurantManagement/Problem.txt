@@ -1,0 +1,24 @@
+﻿Realizar la implementación de una mesa de Restaurant. La mesa, tendrá 2 estados: Abierta y
+Cerrada. Estos tendrán 2 acciones posibles: Ordenar, Pagar y ReabrirMesa.
+Abierta: Ordenar nos permitirá agregar consumos al monto general de la mesa, printeando en
+pantalla la concluir dicha acción, cuanto consumo lleva la mesa en cuestión. Pagar, recibirá
+como parámetro una de las 3 formas de pago que posee el restaurant, Efectivo, Tarjeta o pago
+electrónico. Efectivo mantendrá el precio tal y como está, mientras que Tarjeta y pago
+electrónico tendrán un recargo del 10% y 7% respectivamente. Al recibir la petición y el
+método de pago escogido, el sistema deberá determinar automáticamente la estrategia a
+seguir en tiempo de ejecución acorde a los parámetros recibidos, y posteriormente
+desencadenar la cadena de comandos que hagan posible la efectivización del pago. Todos los
+métodos de pago, antes de abonar, deberán arrojar un mensaje de confirmación, indicando
+además, si esa forma de pago tiene recargo. Una vez que se haya abonado el consumo de la
+mesa, esta deberá pasar a cerrada, dándonos la opción en ese mismo momento de reabrirla,
+volviendo su consumo a 0 o dejarla cerrada, de esta última forma finalizando la ejecución del
+programa.
+
+Cerrada: Bajo esta opción Ordenar y Pagar deberán arrojar que la mesa fue cerrada y que no
+se puede hacer nada con ella. La opción ReabrirMesa deberá cambiar el estado a abierta y
+setear el consumo de la mesa en 0.
+
+Consideraciones:
+- Tener en cuenta que el flujo de la aplicación no debe detenerse a menos que la mesa quede
+cerrada y se opte por no volver a abrirla.
+-No se pueden cerrar las mesas que no tengan consumos.

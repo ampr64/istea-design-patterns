@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31612.314
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "src\Utils\Utils.csproj", "{2B74B686-8DE4-4BFF-BDF2-E4DA1FA2D044}"
 EndProject
@@ -25,13 +25,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceTemplates", "src\Pro
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsibility", "ChainOfResponsibility", "{0E4F6300-19E9-4F57-8826-C6677EDC3975}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital", "src\ChainOfResponsibility\Hospital\Hospital.csproj", "{C4574278-CABA-455A-9502-91DB98ACD51E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hospital", "src\ChainOfResponsibility\Hospital\Hospital.csproj", "{C4574278-CABA-455A-9502-91DB98ACD51E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Combinations", "Combinations", "{04692804-21D8-4FF0-9B89-46EFA9E66952}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaDelivery", "src\Combinations\CompositeCommand\PizzaDelivery\PizzaDelivery.csproj", "{A26DA268-30FD-4EDB-B8BF-4E110CCA3323}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzaDelivery", "src\Combinations\CompositeCommand\PizzaDelivery\PizzaDelivery.csproj", "{A26DA268-30FD-4EDB-B8BF-4E110CCA3323}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompositeCommand", "CompositeCommand", "{A7F3D19C-3B95-48A2-9109-D571181AA9C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strategy", "Strategy", "{05257324-9BC5-4F21-B060-7CDF178E1769}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommandStateStrategy", "CommandStateStrategy", "{D5E626CD-F3B2-47DC-9408-783DC88C21B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantManagement", "src\Combinations\CommandStateStrategy\RestaurantManagement\RestaurantManagement.csproj", "{AEC0D899-A210-409C-81CF-379E75F1B689}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +77,10 @@ Global
 		{A26DA268-30FD-4EDB-B8BF-4E110CCA3323}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A26DA268-30FD-4EDB-B8BF-4E110CCA3323}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A26DA268-30FD-4EDB-B8BF-4E110CCA3323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEC0D899-A210-409C-81CF-379E75F1B689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEC0D899-A210-409C-81CF-379E75F1B689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEC0D899-A210-409C-81CF-379E75F1B689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEC0D899-A210-409C-81CF-379E75F1B689}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +94,8 @@ Global
 		{C4574278-CABA-455A-9502-91DB98ACD51E} = {0E4F6300-19E9-4F57-8826-C6677EDC3975}
 		{A26DA268-30FD-4EDB-B8BF-4E110CCA3323} = {A7F3D19C-3B95-48A2-9109-D571181AA9C0}
 		{A7F3D19C-3B95-48A2-9109-D571181AA9C0} = {04692804-21D8-4FF0-9B89-46EFA9E66952}
+		{D5E626CD-F3B2-47DC-9408-783DC88C21B1} = {04692804-21D8-4FF0-9B89-46EFA9E66952}
+		{AEC0D899-A210-409C-81CF-379E75F1B689} = {D5E626CD-F3B2-47DC-9408-783DC88C21B1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6DBAC3F-5A78-4734-A4D1-32098E72C9E6}
