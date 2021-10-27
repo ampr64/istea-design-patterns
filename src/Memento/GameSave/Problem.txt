@@ -1,0 +1,4 @@
+﻿Implementar mediante patrón memento, un juego donde se pueda salvar la partida hasta 3 veces.
+La partida, debe tener un método mostrar que imprima en pantalla el nombre del jugador, así como también su vida.
+Al momento de guardar la partida por 4ta vez, no debe dejar hacerlo (en lo posible devolver mensaje de error).
+Hacer un último mostrar, para constatar que el estado de la partida sea la del tercer save.

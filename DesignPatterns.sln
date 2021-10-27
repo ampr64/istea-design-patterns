@@ -25,13 +25,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceTemplates", "src\Pro
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsibility", "ChainOfResponsibility", "{0E4F6300-19E9-4F57-8826-C6677EDC3975}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital", "src\ChainOfResponsibility\Hospital\Hospital.csproj", "{C4574278-CABA-455A-9502-91DB98ACD51E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hospital", "src\ChainOfResponsibility\Hospital\Hospital.csproj", "{C4574278-CABA-455A-9502-91DB98ACD51E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Combinations", "Combinations", "{04692804-21D8-4FF0-9B89-46EFA9E66952}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaDelivery", "src\Combinations\CompositeCommand\PizzaDelivery\PizzaDelivery.csproj", "{A26DA268-30FD-4EDB-B8BF-4E110CCA3323}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzaDelivery", "src\Combinations\CompositeCommand\PizzaDelivery\PizzaDelivery.csproj", "{A26DA268-30FD-4EDB-B8BF-4E110CCA3323}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompositeCommand", "CompositeCommand", "{A7F3D19C-3B95-48A2-9109-D571181AA9C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Memento", "Memento", "{EF0ABE78-A37E-4A0F-9411-83716C1B6605}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameSave", "src\Memento\GameSave\GameSave.csproj", "{AD543BAF-94B1-4ED0-BB27-409FFF06BD2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +75,14 @@ Global
 		{A26DA268-30FD-4EDB-B8BF-4E110CCA3323}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A26DA268-30FD-4EDB-B8BF-4E110CCA3323}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A26DA268-30FD-4EDB-B8BF-4E110CCA3323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD543BAF-94B1-4ED0-BB27-409FFF06BD2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD543BAF-94B1-4ED0-BB27-409FFF06BD2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD543BAF-94B1-4ED0-BB27-409FFF06BD2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD543BAF-94B1-4ED0-BB27-409FFF06BD2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A560DB15-B809-4143-ABE3-D9D98B354501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A560DB15-B809-4143-ABE3-D9D98B354501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A560DB15-B809-4143-ABE3-D9D98B354501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A560DB15-B809-4143-ABE3-D9D98B354501}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +96,9 @@ Global
 		{C4574278-CABA-455A-9502-91DB98ACD51E} = {0E4F6300-19E9-4F57-8826-C6677EDC3975}
 		{A26DA268-30FD-4EDB-B8BF-4E110CCA3323} = {A7F3D19C-3B95-48A2-9109-D571181AA9C0}
 		{A7F3D19C-3B95-48A2-9109-D571181AA9C0} = {04692804-21D8-4FF0-9B89-46EFA9E66952}
+		{AD543BAF-94B1-4ED0-BB27-409FFF06BD2E} = {EF0ABE78-A37E-4A0F-9411-83716C1B6605}
+		{EF512B35-EC7D-4E63-905C-E68C4C3975CA} = {04692804-21D8-4FF0-9B89-46EFA9E66952}
+		{A560DB15-B809-4143-ABE3-D9D98B354501} = {EF512B35-EC7D-4E63-905C-E68C4C3975CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6DBAC3F-5A78-4734-A4D1-32098E72C9E6}
