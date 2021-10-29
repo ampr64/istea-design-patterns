@@ -1,4 +1,4 @@
-﻿using RestaurantManagement.Strategy;
+﻿using RestaurantManagement.Command;
 
 namespace RestaurantManagement.State
 {
@@ -14,7 +14,7 @@ namespace RestaurantManagement.State
 
         public abstract void Order(decimal amount);
 
-        public abstract void Pay(IPaymentMethod paymentMethod);
+        public abstract void Pay(PayTableCommand command);
 
         public abstract void Reopen();
     }

@@ -1,4 +1,5 @@
-﻿using RestaurantManagement.Strategy;
+﻿using RestaurantManagement.Command;
+using RestaurantManagement.Strategy;
 using System;
 
 namespace RestaurantManagement.State
@@ -9,6 +10,8 @@ namespace RestaurantManagement.State
 
         public int Number { get; }
 
+        public decimal BillAmount => _state.BillAmount;
+
         public Table(int number)
         {
             Number = number;
@@ -17,19 +20,19 @@ namespace RestaurantManagement.State
 
         public void TransitionTo(TableState state)
         {
-            if (state.GetType() == typeof(ClosedTable) && _state.GetType() == typeof(OpenTable) && _state.BillAmount == 0)
+            if (state.GetType() == typeof(ClosedTable) && _state.GetType() == typeof(OpenTable) && BillAmount == 0)
             {
                 Console.WriteLine("Cannot close an unbilled table!");
                 return;
             }
 
-            Console.WriteLine($"{nameof(Table)} transitioning to {state.GetType().Name}");
+            Console.WriteLine($"{nameof(Table)} {Number} transitioning to {state.GetType().Name}");
             _state = state;
         }
 
         public void Order(decimal amount) => _state.Order(amount);
 
-        public void Pay(IPaymentMethod paymentMethod) => _state.Pay(paymentMethod);
+        public void Pay(IPaymentMethod paymentMethod) => _state.Pay(new PayTableCommand(Number, BillAmount, paymentMethod));
 
         public void Reopen() => _state.Reopen();
     }

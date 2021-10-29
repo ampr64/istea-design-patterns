@@ -17,17 +17,13 @@ namespace RestaurantManagement
             var table3 = new Table(3);
             table3.Order(100);
 
-            var payTable1Command = new PayTableCommand(table1, new CashPayment());
-            var payTable2Command = new PayTableCommand(table1, new CreditCardPayment());
-            var payTable3Command = new PayTableCommand(table1, new EPayment());
-
-            payTable1Command.Execute();
-            payTable2Command.Execute();
-            payTable3Command.Execute();
+            table1.Pay(new CashPayment());
+            table2.Pay(new CreditCardPayment());
+            table3.Pay(new EPayment());
 
             table2.Reopen();
 
-            payTable3Command.Execute();
+            table3.Pay(new CashPayment());
             table3.Order(10);
 
             table2.Order(5);

@@ -1,4 +1,4 @@
-﻿using RestaurantManagement.Strategy;
+﻿using RestaurantManagement.Command;
 using System;
 
 namespace RestaurantManagement.State
@@ -10,7 +10,7 @@ namespace RestaurantManagement.State
 
         public override void Order(decimal price) => Console.WriteLine("A closed table cannot make orders!");
 
-        public override void Pay(IPaymentMethod paymentMethod) => Console.WriteLine("It's not possible to pay for a closed table!");
+        public override void Pay(PayTableCommand command) => Console.WriteLine("It's not possible to pay for a closed table!");
 
         public override void Reopen()
         {
