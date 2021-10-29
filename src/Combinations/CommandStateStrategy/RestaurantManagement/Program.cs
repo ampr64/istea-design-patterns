@@ -1,5 +1,4 @@
-﻿using RestaurantManagement.Command;
-using RestaurantManagement.State;
+﻿using RestaurantManagement.State;
 using RestaurantManagement.Strategy;
 
 namespace RestaurantManagement

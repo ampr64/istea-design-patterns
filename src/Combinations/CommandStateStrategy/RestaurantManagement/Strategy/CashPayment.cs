@@ -1,6 +1,7 @@
 ﻿namespace RestaurantManagement.Strategy
 {
-    public class CashPayment : IPaymentMethod
-    {        
+    public class CashPayment : PaymentMethod
+    {
+        public override decimal Charge => 0;
     }
 }

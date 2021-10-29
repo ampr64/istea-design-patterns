@@ -32,7 +32,7 @@ namespace RestaurantManagement.State
 
         public void Order(decimal amount) => _state.Order(amount);
 
-        public void Pay(IPaymentMethod paymentMethod) => _state.Pay(new PayTableCommand(Number, BillAmount, paymentMethod));
+        public void Pay(PaymentMethod paymentMethod) => _state.Pay(new PayTableCommand(Number, BillAmount, paymentMethod));
 
         public void Reopen() => _state.Reopen();
     }
