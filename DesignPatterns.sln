@@ -39,6 +39,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommandStateStrategy", "Com
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantManagement", "src\Combinations\CommandStateStrategy\RestaurantManagement\RestaurantManagement.csproj", "{AEC0D899-A210-409C-81CF-379E75F1B689}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DecoratorFactory", "DecoratorFactory", "{2D1F8897-5D66-47EB-A471-FDD88B95EF2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDevicesFactory", "src\Combinations\DecoratorFactory\SmartDevicesFactory\SmartDevicesFactory.csproj", "{8F366B51-4F42-4AF0-980A-D0E32F5E5C44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,10 @@ Global
 		{AEC0D899-A210-409C-81CF-379E75F1B689}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEC0D899-A210-409C-81CF-379E75F1B689}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEC0D899-A210-409C-81CF-379E75F1B689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F366B51-4F42-4AF0-980A-D0E32F5E5C44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F366B51-4F42-4AF0-980A-D0E32F5E5C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F366B51-4F42-4AF0-980A-D0E32F5E5C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F366B51-4F42-4AF0-980A-D0E32F5E5C44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +104,8 @@ Global
 		{A7F3D19C-3B95-48A2-9109-D571181AA9C0} = {04692804-21D8-4FF0-9B89-46EFA9E66952}
 		{D5E626CD-F3B2-47DC-9408-783DC88C21B1} = {04692804-21D8-4FF0-9B89-46EFA9E66952}
 		{AEC0D899-A210-409C-81CF-379E75F1B689} = {D5E626CD-F3B2-47DC-9408-783DC88C21B1}
+		{2D1F8897-5D66-47EB-A471-FDD88B95EF2D} = {04692804-21D8-4FF0-9B89-46EFA9E66952}
+		{8F366B51-4F42-4AF0-980A-D0E32F5E5C44} = {2D1F8897-5D66-47EB-A471-FDD88B95EF2D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6DBAC3F-5A78-4734-A4D1-32098E72C9E6}
