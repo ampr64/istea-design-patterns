@@ -1,0 +1,8 @@
+﻿Se quieren implementar dos fábricas, una que realice la creación de televisores (Smart o comunes), y otra que realice la creación de Chromecasts.
+Los televisores tendrán acciones comunes (sean Smart o comunes) que serán: Encender(), Apagar() y ReproducirTv().
+Tener en cuenta que para reproducir la tv, el mismo deberá estar encendido.
+Tanto el SmartTv (Además de las acciones propias de la tele) como el Chromecast, tendrán acciones comunes que serán ReproducirNetflix y ReproducirYoutube().
+El Chromecast podrá realizar esas acciones únicamente si se encuentra conectado a un televisor común, y no podrá reproducir nada por si solo (asi como tampoco podrá ser conectado a un smartTv).
+Cuando se conecte el Chromecast a una TV, a este último se le añadirán las funcionalidades de poder reproducir Netflix y Youtube como s de un Smart Tv se tratase.
+Tener en cuenta que al hacer cualquiera de estas últimas dos acciones, el Chromecast deberá llamar al método ReproducirTv del televisor, y extenderle su comportamiento.
+Si un TV no tiene un Chromecast conetado, no podrá reproducir Netflix ni Youtube.
